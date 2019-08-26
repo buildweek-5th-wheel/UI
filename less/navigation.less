@@ -1,0 +1,52 @@
+// Navigation Styles here
+
+
+.navigation {
+    display: flex;
+
+    div {
+        width: 50%;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        h1 {
+            font-weight: bold;
+        }
+    }
+
+    .nav-logo {
+        display: flex;
+        
+    }
+    
+
+
+    .links {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            color: black;
+            
+        }
+    }
+
+    padding: 3% 0;
+
+    @media @mobile {
+        flex-direction: column;        
+        div {
+            width: 100%;
+            h1 {
+                text-align: center;
+            }
+        }
+        .links {
+            justify-content: space-evenly;
+        }
+    }
+}
