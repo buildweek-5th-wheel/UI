@@ -178,11 +178,7 @@ img {
 }
 .navigation {
   display: flex;
-  max-height: 100px;
   padding: 3% 0;
-}
-.navigation div {
-  width: 50%;
 }
 .navigation a {
   text-decoration: none;
@@ -192,9 +188,11 @@ img {
   font-weight: bold;
 }
 .navigation .nav-logo {
+  width: 40%;
   display: flex;
 }
 .navigation .links {
+  width: 60%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -213,7 +211,12 @@ img {
   .navigation div h1 {
     text-align: center;
   }
+  .navigation .nav-logo {
+    width: 100%;
+    padding-bottom: 2rem;
+  }
   .navigation .links {
+    width: 100%;
     justify-content: space-evenly;
   }
 }
