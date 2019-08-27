@@ -3,7 +3,7 @@
 
 .navigation {
     display: flex;
-
+    max-height: 100px;
     div {
         width: 50%;
     }
@@ -51,8 +51,9 @@
     }
 }
 
-.nav-btn {
+a.nav-btn {
       .button-mixin(auto, 160, 217, 118, 0.5, @feijoa, @nero, 1.5rem);
+      word-wrap: none;
 }
 
 a.nav-btn:hover {

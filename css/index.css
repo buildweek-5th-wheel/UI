@@ -178,6 +178,7 @@ img {
 }
 .navigation {
   display: flex;
+  max-height: 100px;
   padding: 3% 0;
 }
 .navigation div {
@@ -216,16 +217,18 @@ img {
     justify-content: space-evenly;
   }
 }
-.nav-btn {
+a.nav-btn {
   width: auto;
   text-align: center;
   background: #A0D976;
   padding: 5%;
+  box-sizing: border-box;
   font-size: 1.5rem;
   border-radius: 10px;
   background: rgba(160, 217, 118, 0.5);
   text-decoration: none;
   color: #1E1E1E;
+  word-wrap: none;
 }
 a.nav-btn:hover {
   color: #A0D976;
@@ -322,27 +325,8 @@ a.nav-btn:hover {
     width: 100%;
   }
 }
-.home {
-  -webkit-animation: fadein 2s;
-  /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 2s;
-  /* Firefox < 16 */
-  -ms-animation: fadein 2s;
-  /* Internet Explorer */
-  -o-animation: fadein 2s;
-  /* Opera < 12.1 */
-  animation: fadein 2s;
-}
 .home .stacked-logo {
   display: none;
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 .home header {
   max-width: 800px;
@@ -404,6 +388,7 @@ a.nav-btn:hover {
   text-align: center;
   background: #A0D976;
   padding: 5%;
+  box-sizing: border-box;
   font-size: 2rem;
   border-radius: 10px;
   background: rgba(160, 217, 118, 0.5);
