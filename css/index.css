@@ -237,6 +237,7 @@ img {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 5rem;
 }
 .footer .download .ios-download {
   width: 30%;
@@ -248,6 +249,9 @@ img {
 }
 .footer .awesome {
   padding-top: 30px;
+}
+.footer .awesome h4 {
+  margin-top: 5rem;
 }
 .footer .logo-links {
   display: flex;
@@ -273,6 +277,19 @@ img {
   color: black;
 }
 @media screen and (max-width: 500px) {
+  .footer .download {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footer .download .ios-download {
+    width: 60%;
+    margin: 0.75rem;
+  }
+  .footer .download .android-download {
+    width: 60%;
+    padding-right: 0.5rem;
+  }
   .footer .logo-links {
     flex-direction: column;
     align-items: center;
@@ -285,6 +302,7 @@ img {
   }
   .footer .logo-links .footer-logo .stacked-logo {
     display: block;
+    width: 50%;
   }
   .footer .logo-links .links {
     width: 100%;
@@ -292,6 +310,10 @@ img {
 }
 .home .stacked-logo {
   display: none;
+}
+.home header {
+  max-width: 800px;
+  margin: 0 auto;
 }
 .home .content-section {
   margin: 30px 0;
@@ -366,16 +388,7 @@ img {
   margin-bottom: 30px;
 }
 .home .line {
-  border-bottom: 3px solid #278924;
-}
-.home .nav-line {
-  box-sizing: border-box;
-  width: 100vw;
-  border-top: 3px solid #278924;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin-bottom: 1%;
+  border-bottom: 2px solid #278924;
 }
 .home .where-you-park-it {
   display: flex;

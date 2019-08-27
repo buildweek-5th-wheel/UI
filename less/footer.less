@@ -20,6 +20,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 5rem;
 
     .ios-download {
       width: 30%;
@@ -34,6 +35,10 @@
 
    .awesome {
     padding-top: 30px;
+
+    h4 {
+      margin-top: 5rem;
+    }
   }
 
   .logo-links {
@@ -67,6 +72,22 @@
   }
 
   @media @mobile {
+    .download {
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
+      .ios-download {
+        width: 60%;
+        margin: 0.75rem;
+      }
+
+      .android-download {
+        width: 60%;
+        padding-right: 0.5rem;
+      }
+    }
+
     .logo-links {
       flex-direction: column;
       align-items: center;
@@ -80,6 +101,7 @@
 
         .stacked-logo {
           display: block;
+          width: 50%;
         }
       }
 
