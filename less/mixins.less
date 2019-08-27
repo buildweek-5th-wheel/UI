@@ -1,14 +1,12 @@
 // Mixins in here
-.button-mixin(@width, @r, @g, @b, @opacity, @background, @color) {
+.button-mixin(@width, @r, @g, @b, @opacity, @background, @color, @font-size) {
     width: @width;
     text-align: center;
     background: @background;
     padding: 5%;
-    font-size: 2rem;
+    font-size: @font-size;
     border-radius:10px;
     background: rgba(@r, @g, @b, @opacity);
     text-decoration: none;
     color: @color;
-    
-    
 }

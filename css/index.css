@@ -216,6 +216,21 @@ img {
     justify-content: space-evenly;
   }
 }
+.nav-btn {
+  width: auto;
+  text-align: center;
+  background: #A0D976;
+  padding: 5%;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background: rgba(160, 217, 118, 0.5);
+  text-decoration: none;
+  color: #1E1E1E;
+}
+a.nav-btn:hover {
+  color: #A0D976;
+  background: #1E1E1E;
+}
 .footer {
   width: 100%;
   max-width: 800px;
@@ -274,7 +289,6 @@ img {
 }
 .footer .logo-links .links a {
   text-decoration: none;
-  color: black;
 }
 @media screen and (max-width: 500px) {
   .footer .download {
@@ -308,8 +322,27 @@ img {
     width: 100%;
   }
 }
+.home {
+  -webkit-animation: fadein 2s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 2s;
+  /* Internet Explorer */
+  -o-animation: fadein 2s;
+  /* Opera < 12.1 */
+  animation: fadein 2s;
+}
 .home .stacked-logo {
   display: none;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .home header {
   max-width: 800px;
@@ -366,7 +399,7 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-.home .get-started-today .content-destination-inner .btn {
+.home .get-started-today .content-destination-inner a.btn {
   width: 70%;
   text-align: center;
   background: #A0D976;
@@ -376,6 +409,10 @@ img {
   background: rgba(160, 217, 118, 0.5);
   text-decoration: none;
   color: #FFFFFF;
+}
+.home .get-started-today .content-destination-inner a.btn:hover {
+  background: rgba(160, 217, 118, 0.8);
+  color: #1E1E1E;
 }
 .home .content-pick {
   padding-top: 30px;
