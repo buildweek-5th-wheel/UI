@@ -424,6 +424,7 @@ footer .links a {
   background-position: center center;
   margin-bottom: 5rem;
   margin-top: 2rem;
+  border-radius: 10px;
 }
 .home .where-you-park-it h2 {
   position: relative;
