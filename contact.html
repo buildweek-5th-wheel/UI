@@ -25,15 +25,29 @@
             <div class="jumbotron">
                 <div class="container">
                     <h1 class="display-3">Hello, Team!</h1>
-                    <p>This is a page dedicated to the wonderful team that made Fifth wheel a thing. Its also a bootstrap tempalte.</p>
+                    <p>Not satisfied? You can always talk to a representive at x(xxx)xxx-xxxx</p>
                     <p><a class="btn btn-primary btn-lg" href="#form" role="button">Contact Us &raquo;</a></p>
                 </div>
             </div>  
 
-             <p>Not satisfied? You can always talk to a representive at x(xxx)xxx-xxxx</p>
 
              <div id='form' class="contact-form">
-
+                    <div class="container">
+                            <form action="action_page.php">
+                          
+                              <label for="fname">First Name</label>
+                              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                          
+                              <label for="lname">Last Name</label>
+                              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                          
+                              <label for="subject">Subject</label>
+                              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                          
+                              <input type="submit" value="Submit">
+                          
+                            </form>
+                          </div>
              </div>
             </div>    
          

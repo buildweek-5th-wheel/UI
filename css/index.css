@@ -123,6 +123,9 @@
 .intro .intro-img {
   width: 35%;
 }
+.intro .intro-img img {
+  border-radius: 12px;
+}
 @media (max-width: 500px) {
   .intro .intro-img {
     display: none;
@@ -181,6 +184,7 @@
   }
 }
 .trio img {
+  border-radius: 12px;
   width: 440px;
   height: 310px;
 }
@@ -344,10 +348,7 @@
 .footer .footer-box-div .footer-box a:hover {
   text-decoration: underline;
 }
-@media (max-width: 500px) {
-  .footer .footer-box-div .footer-box {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
+.contact-form {
+  display: flex;
+  flex-direction: column;
 }
