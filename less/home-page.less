@@ -97,16 +97,24 @@
   .where-you-park-it {
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 400px;
     padding-bottom: 3%;
-    padding-top: 0.5%;
     background-image: url("../img/where-you-park-it.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    border-radius: 20px;
     margin-bottom: 5rem;
+    margin-top: 2rem;
+
+    h2 {
+      position: relative;
+      top: 5rem;
+      font-size: 3rem;
+
+      @media @mobile {
+        font-size: 2rem;
+      }
+    }
   }
 
   .welcome-to-5th-wheel {

@@ -320,7 +320,6 @@ footer .links a {
   }
   footer .logo-links .footer-logo .stacked-logo {
     display: block;
-    width: 50%;
   }
   footer .logo-links .links {
     width: 100%;
@@ -417,16 +416,24 @@ footer .links a {
 .home .where-you-park-it {
   display: flex;
   justify-content: center;
-  align-items: center;
   height: 400px;
   padding-bottom: 3%;
-  padding-top: 0.5%;
   background-image: url("../img/where-you-park-it.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  border-radius: 20px;
   margin-bottom: 5rem;
+  margin-top: 2rem;
+}
+.home .where-you-park-it h2 {
+  position: relative;
+  top: 5rem;
+  font-size: 3rem;
+}
+@media screen and (max-width: 500px) {
+  .home .where-you-park-it h2 {
+    font-size: 2rem;
+  }
 }
 .home .welcome-to-5th-wheel {
   margin-bottom: 5rem;
