@@ -325,7 +325,7 @@
   width: 90%;
 }
 .footer .footer-prima p {
-  width: 60%;
+  width: 80%;
 }
 .footer .footer-box-div {
   margin-right: 30%;
@@ -351,4 +351,10 @@
 .contact-form {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+}
+.contact-form div,
+.contact-form h2 {
+  margin: 2% auto;
+  width: 100%;
 }
