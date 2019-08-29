@@ -3,7 +3,11 @@
 **[5th Wheel Marketing Page deployed on Netlify](https://5thwheel-markking.netlify.com)**
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a54b3e86-039c-4e7c-8b61-13cff267665e/deploy-status)](https://app.netlify.com/sites/5thwheel-markking/deploys)
 
-## **Mark King - Web UI Developer**
+## **Web UI Developers**
+- Mark King
+- Brendan Finn
+- Spencer Clark
+- Zeleke Dema
 
 ## **Role Description**
 
