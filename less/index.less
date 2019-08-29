@@ -16,6 +16,7 @@
 @phone: ~"(max-width: 500px)";
 @tablet: ~"(max-width: 800px)";
 
+// navbar
 .navbar{
     width: 80%;
     display: flex;
@@ -68,6 +69,8 @@
     }
 }
 
+// support 24/7 support
+
 .support-div{
             @media @phone {
                 display: none;
@@ -101,6 +104,8 @@
 }
 }
 
+// landing page main
+
 .intro{
     margin: 0% 10%;
     width:  80% auto;
@@ -123,6 +128,12 @@
             padding: 8px 10;
             border-radius: 8px;
             border: grey 1px solid;
+            @media @phone {
+                width: 55%;
+            }
+            @media @tablet {
+                width: 63%;
+            }
         }
         .intro-btn{
             background: @forest-green;
@@ -157,6 +168,7 @@
         }
 
 
+// Boxes
 .trio-title{
     display: flex;
     justify-content: center;
@@ -180,6 +192,7 @@
         }
         
 }
+
 .trio{
     display: flex;
     flex-direction: row;
@@ -227,6 +240,7 @@
     }
 }
 
+// Host Banner 
 .banner{
     width: 100%;
     margin: 5% auto;
@@ -323,6 +337,9 @@
     }
 }
 
+
+// download app banner
+
 .app-display{
     width: 80%;
     margin: 5% auto;
@@ -367,6 +384,8 @@
     }
 }
 
+
+// Footer
 .footer{
     display: flex;
     justify-content: space-evenly;
@@ -383,8 +402,6 @@
     }
     
     }
-
-
  .footer-prima{
       margin-left: 10%;
       width: 70%;

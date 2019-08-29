@@ -117,6 +117,16 @@
   border-radius: 8px;
   border: grey 1px solid;
 }
+@media (max-width: 500px) {
+  .intro .intro-text .intro-field {
+    width: 55%;
+  }
+}
+@media (max-width: 800px) {
+  .intro .intro-text .intro-field {
+    width: 63%;
+  }
+}
 .intro .intro-text .intro-btn {
   background: #278924;
   border: 1px #278924 solid;
