@@ -1,0 +1,537 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 5%;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Oswald', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Cabin', sans-serif;
+}
+h1 {
+  font-size: 3.2rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h3 {
+  font-size: 2.8rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p,
+a {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.maxwidth {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.navigation {
+  display: flex;
+  padding: 3% 0;
+}
+.navigation .nav-logo {
+  width: 40%;
+  display: flex;
+}
+.navigation .links {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media screen and (max-width: 500px) {
+  .navigation {
+    flex-direction: column;
+  }
+  .navigation div {
+    width: 100%;
+  }
+  .navigation div h1 {
+    text-align: center;
+  }
+  .navigation .nav-logo {
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+  .navigation .links {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}
+a.nav-btn {
+  width: auto;
+  text-align: center;
+  padding: 5%;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background: rgba(160, 217, 118, 0.5);
+  text-decoration: none;
+  color: #1E1E1E;
+  word-wrap: none;
+}
+a.nav-btn:hover {
+  color: #A0D976;
+  background: #1E1E1E;
+}
+footer {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-top: 2px solid #278924;
+  background: #FFFFFF;
+}
+footer p {
+  text-align: center;
+  color: #1E1E1E;
+  font-size: 1.6rem;
+  padding: 20px;
+}
+footer h2,
+footer h4 {
+  text-align: center;
+}
+footer .download {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+footer .download .ios-download {
+  width: 30%;
+  margin: 0.75rem;
+}
+footer .download .android-download {
+  width: 30%;
+  padding-right: 0.5rem;
+}
+footer .awesome {
+  padding-top: 30px;
+}
+footer .awesome h4 {
+  margin-top: 5rem;
+}
+footer .logo-links {
+  display: flex;
+}
+footer .logo-links .footer-logo {
+  width: 50%;
+}
+footer .logo-links .footer-logo .stacked-logo {
+  display: none;
+}
+footer .logo-links .footer-logo img {
+  display: block;
+  margin: 0 auto;
+}
+footer .logo-links .reach-us {
+  font-size: 2rem;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+footer .logo-links .reach-us address a {
+  color: black;
+}
+footer .links {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer .links a {
+  text-decoration: none;
+}
+@media screen and (max-width: 500px) {
+  footer .download {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer .download .ios-download {
+    width: 60%;
+    margin: 0.75rem;
+  }
+  footer .download .android-download {
+    width: 60%;
+    padding-right: 0.5rem;
+  }
+  footer .logo-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .logo-links .footer-logo {
+    width: 100%;
+  }
+  footer .logo-links .footer-logo .horz-logo {
+    display: none;
+  }
+  footer .logo-links .footer-logo .stacked-logo {
+    display: block;
+  }
+  footer .logo-links .links {
+    width: 100%;
+  }
+}
+.home .stacked-logo {
+  display: none;
+}
+.home header {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.home .content-section {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.home .content-section .text-content {
+  width: 48%;
+  padding-right: 1%;
+}
+.home .content-section .img-content {
+  width: 48%;
+  padding-left: 1%;
+}
+.home .content-section .img-content img {
+  border-radius: 20px;
+}
+.home .inverse-content {
+  padding-bottom: 30px;
+  border-bottom: 2px solid #278924;
+}
+.home .inverse-content .text-content {
+  padding-left: 1%;
+  padding-right: 0;
+}
+.home .inverse-content .img-content {
+  padding-right: 1%;
+  padding-left: 0;
+}
+.home .get-started-today {
+  width: 100%;
+  height: 35rem;
+  margin: 0 auto 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-image: url('../img/harvest.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 10px;
+  color: #FFFFFF;
+}
+.home .get-started-today .content-destination-inner {
+  height: 100%;
+  padding: 2% 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.home .get-started-today .content-destination-inner a.btn {
+  width: 70%;
+  text-align: center;
+  padding: 5%;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background: rgba(30, 30, 30, 0.5);
+  text-decoration: none;
+  color: #FFFFFF;
+  position: relative;
+  bottom: 40%;
+}
+@media screen and (max-width: 500px) {
+  .home .get-started-today .content-destination-inner a.btn {
+    position: relative;
+    bottom: auto;
+  }
+}
+.home .get-started-today .content-destination-inner a.btn:hover {
+  background: rgba(30, 30, 30, 0.9);
+  border: 2px solid #278924;
+}
+.home .content-pick {
+  padding-top: 30px;
+  border-top: 2px solid #278924;
+  display: flex;
+  justify-content: space-between;
+}
+.home .content-pick .feature {
+  width: 30%;
+  margin-bottom: 30px;
+}
+.home .line {
+  border-bottom: 2px solid #278924;
+}
+.home .where-you-park-it {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  padding-bottom: 3%;
+  background-image: url("../img/where-you-park-it.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+}
+.home .where-you-park-it h2 {
+  position: relative;
+  top: 5rem;
+  font-size: 3rem;
+}
+@media screen and (max-width: 500px) {
+  .home .where-you-park-it h2 {
+    font-size: 2rem;
+  }
+}
+.home .welcome-to-5th-wheel {
+  margin-bottom: 5rem;
+}
+@media screen and (max-width: 500px) {
+  .home .horz-logo {
+    display: none;
+  }
+  .home .stacked-logo {
+    display: flex;
+    justify-content: center;
+  }
+  .home .content-section .text-content {
+    width: 100%;
+  }
+  .home .content-section .img-content {
+    width: 100%;
+  }
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .home .get-started-today {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+  .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+  }
+  .home .content-pick .feature {
+    width: 90%;
+  }
+}
+.about .role {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 500px) {
+  .about .role {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.about .role .dev {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  padding: 0 1rem;
+}
+@media screen and (max-width: 500px) {
+  .about .role .dev {
+    width: 90%;
+  }
+  .about .role .dev img {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+.about .role .dev img {
+  border-radius: 10%;
+}
+.about .role .dev .git-username {
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  font-family: 'Cabin', sans-serif;
+}
+.about .role .dev a {
+  margin: 2rem;
+}
+body {
+  -webkit-animation: fadein 2s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 2s;
+  /* Internet Explorer */
+  -o-animation: fadein 2s;
+  /* Opera < 12.1 */
+  animation: fadein 2s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
