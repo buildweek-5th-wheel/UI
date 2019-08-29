@@ -1,7 +1,6 @@
 .main {
   font-family: Arial, Helvetica, sans-serif;
 }
-@tablet (max-width: 800px);
 .navbar {
   width: 80%;
   display: flex;
@@ -13,6 +12,11 @@
     width: 100%;
     justify-content: center;
     flex-direction: column;
+  }
+}
+@media (max-width: 800px) {
+  .navbar {
+    margin: 0 1%;
   }
 }
 @media (max-width: 500px) {
@@ -60,6 +64,11 @@
 @media (max-width: 500px) {
   .support-div {
     display: none;
+  }
+}
+@media (max-width: 800px) {
+  .support-div {
+    width: 55%;
   }
 }
 .support-div .support-banner {
@@ -126,15 +135,18 @@
 .intro .intro-img img {
   border-radius: 12px;
 }
+@media (max-width: 800px) {
+  .intro .intro-img img {
+    width: 40vw;
+  }
+}
 @media (max-width: 500px) {
   .intro .intro-img {
     display: none;
   }
 }
 @media (max-width: 500px) {
-  .intro {
-    width: 100%;
-  }
+  width: 100%;
 }
 .trio-title {
   display: flex;
@@ -150,6 +162,13 @@
     width: 100%;
     padding-left: 29%;
     padding-right: 29%;
+    padding-bottom: 3%;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 800px) {
+  .trio-title {
+    width: 100%;
     padding-bottom: 3%;
     font-size: 0.8rem;
   }
@@ -170,12 +189,28 @@
     flex-direction: column;
   }
 }
+@media (max-width: 800px) {
+  .trio {
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 18%;
+    padding-right: 18%;
+  }
+}
 .trio .trio-boxes {
   margin: 0% 2%;
   width: 30%;
   font-size: 1.3rem;
 }
 @media (max-width: 500px) {
+  .trio .trio-boxes {
+    width: 100%;
+    justify-content: center;
+    font-size: 1rem;
+    margin-bottom: 15%;
+  }
+}
+@media (max-width: 800px) {
   .trio .trio-boxes {
     width: 100%;
     justify-content: center;
@@ -219,6 +254,14 @@
     width: 100%;
   }
 }
+@media (max-width: 800px) {
+  .banner h2 {
+    padding: 0%;
+    width: 100%;
+    margin: 5% auto;
+    font-size: 1.3rem;
+  }
+}
 .banner p {
   position: absolute;
   font-size: 1.8rem;
@@ -229,6 +272,14 @@
 @media (max-width: 500px) {
   .banner p {
     display: none;
+  }
+}
+@media (max-width: 800px) {
+  .banner p {
+    padding: 0%;
+    width: 50%;
+    margin: 10% 24%;
+    font-size: 1rem;
   }
 }
 .banner a {
@@ -249,6 +300,14 @@
     width: 100%;
   }
 }
+@media (max-width: 800px) {
+  .banner a {
+    font-size: 1.1rem;
+    width: 22%;
+    margin: 26% 35%;
+    text-align: center;
+  }
+}
 .banner img {
   z-index: -1;
   position: relative;
@@ -258,6 +317,12 @@
 @media (max-width: 500px) {
   .banner img {
     display: none;
+  }
+}
+@media (max-width: 800px) {
+  .banner img {
+    width: 100vw;
+    height: 40vh;
   }
 }
 .app-display {
@@ -302,6 +367,11 @@
     width: 100%;
     display: flex;
     justify-content: center;
+  }
+}
+@media (max-width: 800px) {
+  .app-display .app-img {
+    margin-right: 60px;
   }
 }
 .footer {

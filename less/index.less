@@ -14,7 +14,7 @@
 @woodland: #5A5F3C;
 @crusoe: #175D31;
 @phone: ~"(max-width: 500px)";
-@tablet  ~"(max-width: 800px)";
+@tablet: ~"(max-width: 800px)";
 
 .navbar{
     width: 80%;
@@ -25,6 +25,9 @@
                 width: 100%;
                 justify-content: center;
                 flex-direction: column;
+            }
+            @media @tablet {
+                margin: 0 1%;
             }
 
     .logo{
@@ -69,6 +72,10 @@
             @media @phone {
                 display: none;
         }
+        @media @tablet {
+            width: 55%;
+        }
+
     width: 20%;
     margin: 3% 0;
     margin-left: 13%;
@@ -134,16 +141,21 @@
         width: 35%;
         img{
         border-radius: 12px;
+        @media @tablet {
+            width: 40vw;
+        }
     }
             @media @phone {
                 display: none;
             }
+            
+}
     }
 
             @media @phone {
                 width: 100%;
         }
-}
+
 
 .trio-title{
     display: flex;
@@ -160,6 +172,13 @@
             padding-bottom: 3%; 
             font-size: .8rem;
         }
+        @media @tablet {
+            width: 100%;
+           
+            padding-bottom: 3%; 
+            font-size: .8rem;
+        }
+        
 }
 .trio{
     display: flex;
@@ -174,6 +193,13 @@
             justify-content: center;
             flex-direction: column;
         }
+        @media @tablet {
+            justify-content: center;
+            flex-direction: column;
+            padding-left: 18%; 
+            padding-right: 18%; 
+            
+        }
     .trio-boxes{
         margin: 0% 2%;
         width: 30%;
@@ -184,6 +210,13 @@
                 justify-content: center;
                 font-size: 1rem;
                 margin-bottom: 15%;
+            }
+            @media @tablet {
+                width: 100%;
+                justify-content: center;
+                font-size: 1rem;
+                margin-bottom: 15%;
+                
             }
     }
 
@@ -223,6 +256,12 @@
            
             
     }
+    @media @tablet {
+        padding: 0%;
+        width: 100%;
+        margin: 5% auto;
+        font-size: 1.3rem;
+    }
        
     }
     p{
@@ -234,6 +273,12 @@
         @media @phone {
             display: none;
             
+    }
+    @media @tablet {
+        padding: 0%;
+        width: 50%;
+        margin: 10% 24%;
+        font-size: 1rem;
     }
        
     }
@@ -251,9 +296,15 @@
             padding: 0;
             margin: 15% 0;
             text-align: center;
-            
             width: 100%;
     }
+            @media @tablet {
+                font-size: 1.1rem;
+                width: 22%;
+                margin: 26% 35%; 
+                text-align: center;
+
+            }
     }
     img{
         z-index: -1;
@@ -263,6 +314,10 @@
         @media @phone {
             display: none;
             
+    }
+    @media @tablet {
+        width: 100vw;
+        height: 40vh;
     }
        
     }
@@ -305,6 +360,9 @@
             width: 100%;
             display: flex;
             justify-content: center;
+        }
+        @media @tablet {
+            margin-right: 60px; 
         }
     }
 }
