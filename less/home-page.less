@@ -61,19 +61,27 @@
 
     .content-destination-inner {
       height: 100%;
-      padding: 5% 20%;
+      padding: 2% 20%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
 
       a.btn {
-        .button-mixin(70%, 160, 217, 118, 0.5, @feijoa, @white, 2rem);
+        .button-mixin(70%, 30, 30, 30, 0.5, @nero, @white, 1.5rem);
+
+        position: relative;
+        bottom: 40%;
+
+        @media @mobile {
+          position: relative;
+          bottom: auto;
+        }
       }
 
       a.btn:hover {
-        background: rgba(160, 217, 118, 0.8);
-        color: @nero;
+        background: rgba(30, 30, 30, 0.9);
+        border: 2px solid @forest-green;
       }
     }
   }

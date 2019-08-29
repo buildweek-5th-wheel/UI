@@ -212,7 +212,6 @@ img {
 a.nav-btn {
   width: auto;
   text-align: center;
-  background: #A0D976;
   padding: 5%;
   box-sizing: border-box;
   font-size: 1.5rem;
@@ -378,7 +377,7 @@ footer .links a {
 }
 .home .get-started-today .content-destination-inner {
   height: 100%;
-  padding: 5% 20%;
+  padding: 2% 20%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -387,18 +386,25 @@ footer .links a {
 .home .get-started-today .content-destination-inner a.btn {
   width: 70%;
   text-align: center;
-  background: #A0D976;
   padding: 5%;
   box-sizing: border-box;
-  font-size: 2rem;
+  font-size: 1.5rem;
   border-radius: 10px;
-  background: rgba(160, 217, 118, 0.5);
+  background: rgba(30, 30, 30, 0.5);
   text-decoration: none;
   color: #FFFFFF;
+  position: relative;
+  bottom: 40%;
+}
+@media screen and (max-width: 500px) {
+  .home .get-started-today .content-destination-inner a.btn {
+    position: relative;
+    bottom: auto;
+  }
 }
 .home .get-started-today .content-destination-inner a.btn:hover {
-  background: rgba(160, 217, 118, 0.8);
-  color: #1E1E1E;
+  background: rgba(30, 30, 30, 0.9);
+  border: 2px solid #278924;
 }
 .home .content-pick {
   padding-top: 30px;
