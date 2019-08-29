@@ -360,6 +360,10 @@
   margin: 2% auto;
   width: 100%;
 }
+.col-md-4 {
+  margin-bottom: 12px;
+}
 .col-md-4 img {
+  width: 50%;
   border-radius: 50%;
 }
