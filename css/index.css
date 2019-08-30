@@ -305,7 +305,7 @@
 @media (max-width: 500px) {
   .banner a {
     padding: 0;
-    margin: 15% 0;
+    jmargi-bottom: 5%;
     text-align: center;
     width: 100%;
   }
